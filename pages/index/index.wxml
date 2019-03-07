@@ -1,0 +1,49 @@
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+   class='swiper'
+>
+  <block wx:for="{{swiper}}" wx:key='index'>
+    <swiper-item>
+      <image src="{{item.image_url}}" class="slide-image" width="375" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='fournav'>
+<view wx:for="{{founav}}" class='nav' wx:key="index" bindtap='turnto' data-forward='{{item.id}}' > 
+   <image src="{{item.image_url}}" >
+  </image> 
+</view>
+</view>
+<view class='item-one'>
+  <image src='https://image.watsons.com.cn//upload/9e054016.jpg'></image>
+</view>
+<view class='item-two'> 
+  <image src='https://image.watsons.com.cn//upload/5acf6066.jpg'></image>
+</view>
+<view class='timeview'>
+  <view class='time'>
+  <view>今日秒杀</view>
+  <text>{{msTime.h}}</text>:
+  <text>{{msTime.m}}</text>:
+  <text>{{msTime.s}}</text>
+  </view>
+  <view>更多好货</view>
+</view>
+<view class='timernav'>
+ <view class='item' wx:for="{{timernav}}" wx:key='index'>
+    <view class='imageview'>
+        <image src='{{item.image_url}}'>
+        </image>
+        <text class='biqiang'>必抢</text>
+        <view class='short_name'>{{item.item_short_name}}</view>
+        <view class='price'><text>￥{{item.promotion_price/100}}</text><text>￥{{item.market_price/100}}               </text></view>
+    </view>
+    </view>
+</view>
+<view class='turnitem'>
+<image  src='https://image.watsons.com.cn//upload/10c7a695.jpg?x-oss-process=image/quality,q_80/format,webp' class='image_item'    bindtap='detail' >
+</image>
+</view>

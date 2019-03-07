@@ -1,0 +1,29 @@
+/* pages/itemDetail/index.wxss */
+.pricetext{
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.pricetext text:first-child{
+  text-decoration: line-through;
+}
+.cart{
+  display: flex;
+  color: white;
+  position: absolute;
+  background-color: pink;
+  bottom: 20px;
+  right: 0px;
+  left: 0px;
+  height: 40px;
+  line-height: 40px;
+  justify-content: space-around;
+}
+.cart>view{
+  width: 50%;
+  text-align: center;
+}
+.cart>view:nth-child(2){
+  background-color: red;
+}

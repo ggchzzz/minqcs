@@ -1,0 +1,24 @@
+.itemdetail{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemdetail>image{
+  height:100px;
+  width: 10rem;
+
+}
+.add,.minus{
+  width: 3rem;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.sum{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+}

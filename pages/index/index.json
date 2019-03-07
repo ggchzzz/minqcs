@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+   "detail-list":"detail/index"
+    }
+}

@@ -1,0 +1,44 @@
+/* pages/vip/index.js.wxss */
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.cur{
+  color: red;
+  height: 30px;
+border-bottom: 1px solid pink;
+}
+.item{
+  width: 20rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.item>.itemdetail{
+  width: 9.5rem;
+  border: solid 1px #eee;
+}
+.item>.itemdetail>.itemimage{
+  width: 9.5rem;
+}
+.item>.itemdetail>.childitem{
+  display: flex;
+  justify-content: space-around;
+  color: red;
+  font-size: 12px;
+}
+.item>.itemdetail>.childitem_one{
+  font-size: 12px;
+}
+.item>.itemdetail>.childitem_two{
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  color: rgba(172, 167, 167, 0.897), 0.863)
+}
+.end{
+  position: absolute;
+  bottom: 0px;
+  margin:  0 auto;
+}

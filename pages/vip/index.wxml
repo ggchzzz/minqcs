@@ -1,0 +1,27 @@
+<!--pages/vip/index.js.wxml-->
+<view>
+    <view class='nav'>
+      <view wx:for="{{tab}}" wx:key="index"  data-id='{{item.indexID}}' >
+          <view bindtap='switclass' data-num='{{index}}' class="{{num==index?               'cur':''}}" data-group='{{item.groupID}}'>
+            {{item.name}}
+          </view>
+      </view>
+    </view>
+    
+</view>
+<view class='item'>
+        <view wx:for="{{dateitem}}" wx:key="index" class='itemdetail' 
+      
+        data-id='{{item.item_id}}'  data-image='{{item.over_image_url}}'
+        data-min='{{item.max_price}}'  data-name='{{item.item_short_name}}'  data-max='{{item.max_vip_price}}'  bindtap='detail'> 
+              <image src='{{item.over_image_url}}' class='itemimage' >
+              </image>
+              <view class='childitem'>
+                    <view wx:for="{{item.item_groups}}" wx:for-index='index_' wx:key='index_'                    wx:for-item='item_' wx:key='index'     >
+     {{item_.activity_brief}}
+              </view>
+              </view>
+              <view class='childitem_one'>{{item.sale_point}}</view>
+              <view class='childitem_two'>{{item.item_long_name}}</view>
+        </view>
+</view>

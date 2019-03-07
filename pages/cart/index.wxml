@@ -1,0 +1,10 @@
+<view class='item'>  
+  <view wx:for='{{dataitem}}' class='itemdetail' wx:key='index'>
+  <image src='{{item.image}}'></image>
+  <view class='price'>￥{{item.price}}</view>
+  <button class='add' bindtap='add' data-id='{{item.id}}'>++</button>
+  <view>{{item.num}}</view>
+  <button class='minus' bindtap='minus' data-id='{{item.id}}'>--</button>
+  </view>
+</view>
+<view class='sum'>总价是:{{sumprice}}</view>

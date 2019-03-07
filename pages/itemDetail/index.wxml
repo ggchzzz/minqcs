@@ -1,0 +1,13 @@
+<view>
+<image src='{{image}}'></image>
+<view>{{itemtitle}}</view>
+<view class='pricetext'> 
+ <text>￥{{min}}</text><text>￥{{max}}</text>
+ </view>
+</view>
+<view class='cart'>
+<view bindtap='addcart' data-id='{{id}}'  data-image='{{image}}
+ data-title='{{title}}' data-price='{{min}}'
+ >加入购物车</view>
+<view bindtap='turncart'>立即购买</view>
+</view>
